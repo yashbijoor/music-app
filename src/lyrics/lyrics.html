@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="/C%20Sharp/src/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" type="image/x-icon" sizes="any" href="/C%20Sharp/src/favicon.png">
+    <link rel="stylesheet" href="lyrics.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <h4>C Sharp</h4>
+      </div>
+      <div class="nav-wrapper">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="/C%20Sharp/src/home/index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/C%20Sharp/src/about/about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-active" href="/C%20Sharp/src/lyrics/lyrics.html">LYRICS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/C%20Sharp/src/artists/artists.html">ARTISTS</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <div class="container-wrapper">
+      <div class="left-container">
+        <div class="chords-heading">
+          <h3>Wanna know the chords to your favourite song?</h3>
+        </div>
+        <div class="chords-input-form-wrapper">
+          <img aria-hidden="true" class="guitar-img" src="images/guitar.svg" alt="">
+          <form class="chords-input-form" action="" method="post">
+            <input class="text-3" name="chords" placeholder="Enter the artist">
+            <input class="text-4" name="chords" placeholder="Enter the title">
+            <button class="chords-btn" type="submit" name="button" aria-label="Find chords">Find chords!</button>
+          </form>
+          <img aria-hidden="true" class="guitar-img" src="images/guitar.svg" alt="">
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="lyrics-heading">
+          <h3>Find the lyrics to any song!</h3>
+        </div>
+        <div class="input-form-wrapper">
+          <img aria-hidden="true" class="guitar-img" src="images/guitar.svg" alt="">
+          <form class="input-form" action="" method="post">
+            <input class="text-1" name="artist" placeholder="Enter the artist">
+            <input class="text-2" name="title" placeholder="Enter the title">
+            <button class="btn" type="submit" name="button" aria-label="Get lyrics">Get lyrics</button>
+          </form>
+          <img aria-hidden="true" class="guitar-img" src="images/guitar.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="lyrics-wrapper">
+      <h3 class="name"></h3>
+      <pre class="lyrics"></pre>
+    </div>
+
+    <script src="lyrics.js" charset="utf-8"></script>
+  </body>
+</html>

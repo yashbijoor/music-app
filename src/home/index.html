@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="/C%20Sharp/src/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" type="image/x-icon" sizes="any" href="/C%20Sharp/src/favicon.png">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <h4>C Sharp</h4>
+      </div>
+      <div class="nav-wrapper">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link nav-link-active" href="/C%20Sharp/src/home/index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/C%20Sharp/src/about/about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="/C%20Sharp/src/lyrics/lyrics.html">LYRICS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/C%20Sharp/src/artists/artists.html">ARTISTS</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <div class="container-wrapper">
+      <div class="left-container">
+        <nav class="music-nav">
+          <ul class="music-nav-list">
+            <li class="music-nav-item rock-link link-clicked"><span class="sr-only">Rock</span></li>
+            <li class="music-nav-item folk-link"><span class="sr-only">Folk</span></li>
+            <li class="music-nav-item metal-link"><span class="sr-only">Metal</span></li>
+          </ul>
+        </nav>
+        <div class="left-wrapper">
+          <div class="rock-list">
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">I love rock 'n' roll</span></p>
+              <audio controls>
+                <source src="songs/rock/ILoveRockNRoll.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">The bad touch</span></p>
+              <audio controls>
+                <source src="songs/rock/TheBadTouch.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">We're note gonna take it</span></p>
+              <audio controls>
+                <source src="songs/rock/WereNotGonnaTakeIt.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">We will rock you</span></p>
+              <audio controls>
+                <source src="songs/rock/WeWillRockYou.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+          <div class="folk-list music-toggle">
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">Hey ya</span></p>
+              <audio controls>
+                <source src="songs/folk/HeyYa.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">More than a feeling</span></p>
+              <audio controls>
+                <source src="songs/folk/MoreThanAFeeling.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">Rockstar</span></p>
+              <audio controls>
+                <source src="songs/folk/Rockstar.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">The lion sleeps tonight</span></p>
+              <audio controls>
+                <source src="songs/folk/TheLionSleepsTonight.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+          <div class="metal-list music-toggle">
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">American woman</span></p>
+              <audio controls>
+                <source src="songs/metal/AmericanWoman.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">Hell breaks loose</span></p>
+              <audio controls>
+                <source src="songs/metal/HellBreaksLoose.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">Numb</span></p>
+              <audio controls>
+                <source src="songs/metal/Numb.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="audio-wrapper">
+              <p class="song-title"><span class="sr-only">You shook me</span></p>
+              <audio controls>
+                <source src="songs/metal/YouShookMe.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-wrapper">
+          <img class="disc-img" src="images/disc.svg" alt="">
+          <div class="genre-wrapper">
+            <p>Wanna generate a random music genre?</p>
+            <button class="genre-btn" type="button" name="button" aria-label="Generate">Generate</button>
+            <div class="genre-name"></div>
+          </div>
+          <div class="idea-wrapper">
+            <p>Wanna generate a random music thought?</p>
+            <button class="idea-btn" type="button" name="button" aria-label="Generate">Generate</button>
+            <div class="idea-name"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
